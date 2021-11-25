@@ -1,0 +1,50 @@
+.popup-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #0000006e;
+  animation: fadein 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-background {
+  width: 400px;
+  height: 350px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  transform: scale(1);
+  animation: scalein 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.popup-background p {
+  font-size: 17pt;
+  font-weight: 500;
+  padding: 0px 40px;
+}
+
+@keyframes scalein {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadein {
+  from {
+    background-color: #00000000;
+  }
+
+  to {
+    background-color: #0000006e;
+  }
+}
